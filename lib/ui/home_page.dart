@@ -67,6 +67,12 @@ class _HomePageState extends State<HomePage> {
         //sprint(humidity);
         cloud = currentWeather['cloud'].toInt();
         //print(cloud);
+
+        //daily weather forecast
+        dailyWeatherForecast = weatherData['forecast']['forecastday'];
+        hourlyWeatherForecast = dailyWeatherForecast[0]['hour'];
+        //print(hourlyWeatherForecast);
+        
       });
     } catch (e) {
       //debugPrint(e);
